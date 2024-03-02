@@ -4,7 +4,6 @@ Esta é uma API de Eventos Locais que fornece informações sobre eventos em det
 Evento:
 Estrutura para representar informações sobre um evento.
 Propriedades: id, nome, localização, dataHora, descricao, tipo.
-Exemplo: Detalhes de um evento.
 
 Endpoints
 
