@@ -1,0 +1,48 @@
+#%RAML 1.0
+title: API de Eventos Locais
+baseUri: http://localhost:8081
+version: v1
+mediaType: application/json
+
+types:
+  Evento:
+    type: object
+    properties:
+      id: integer
+      nome: string
+      localizacao: string
+      dataHora: datetime
+      descricao: string
+      tipo: string
+    example:
+      id: 1
+      nome: "Feira de Artesanato da Cidade"
+      localizacao: "Praça Central, Cidade X"
+      dataHora: "2024-03-15T10:00:00Z"
+      descricao: "Uma feira com artesãos locais mostrando suas obras."
+      tipo: "Cultura"
+
+/eventos:
+  get:
+    description: Obtém os detalhes de um evento específico pelo ID.
+    responses:
+      200:
+        body:
+          application/json:
+            type: Evento
+      404:
+        body:
+          application/json:
+            properties:
+              message: string
+            example:
+              message: "Evento não encontrado."
+
+/eventos/buscar:
+  get:
+    description: Obtém os detalhes de um evento específico pelo nome.
+    responses:
+      200:
+        body:
+          application/json:
+            type: Evento[]
