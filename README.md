@@ -9,4 +9,4 @@ Obtém os detalhes de um evento específico pelo ID.
 GET:
 Obtém os detalhes de um evento específico pelo nome.
 
-Explore esta API para obter informações detalhadas sobre eventos locais, seja buscando por ID ou por nome. Utilizando MySQL como banco de dados para eficiência no armazenamento e MuleSoft para o design da API, com a configuração dos fluxos realizada no Anypoint Studio.
+Para obter informações detalhadas sobre eventos locais, seja buscando por ID ou por nome. Utilizando MySQL como banco de dados para eficiência no armazenamento e MuleSoft para o design da API, com a configuração dos fluxos realizada no Anypoint Studio.
